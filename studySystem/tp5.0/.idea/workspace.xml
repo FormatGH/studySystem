@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c9e470e-89ad-48b7-afa5-cef0ba555cad" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/studySystem/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="490" column="4" lean-forward="false" selection-start-line="490" selection-start-column="4" selection-end-line="493" selection-end-column="27" />
+              <folding>
+                <element signature="e#44#77#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookTCourseFile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookTCourseFile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="152" column="129" lean-forward="false" selection-start-line="152" selection-start-column="129" selection-end-line="152" selection-end-column="129" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4824#4830#0#HTML" expanded="true" />
+                <element signature="e#4830#4836#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4985#4991#0#HTML" expanded="true" />
+                <element signature="e#4991#4997#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookCourseMsg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookCourseMsg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/a.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bg.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/bg.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5ae014e653ec3.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/5ae014e653ec3.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/init.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5acb68b25b27b.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/5acb68b25b27b.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookTCourse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookTCourse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="160" column="45" lean-forward="false" selection-start-line="160" selection-start-column="45" selection-end-line="160" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xxxxxxxx.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/xxxxxxxx.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3529#3544#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>default_re</find>
+      <find>images</find>
+      <find>getConfig</find>
+      <find>Config</find>
+      <find>setConfig</find>
+      <find>tem</find>
+      <find>myindex</find>
+      <find>ima</find>
+      <find>where</find>
+      <find>am-icon-check:</find>
+      <find>up-img-cover</find>
+      <find>closeUploadDiv</find>
+      <find>{$email}</find>
+      <find>$message</find>
+      <find>route</find>
+      <find>green</find>
+      <find>tStateRetMsg</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/editBasicData.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/register.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/js/custom_up_img.js" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/userHomeHead.php" />
+        <option value="$PROJECT_DIR$/application/test/config.php" />
+        <option value="$PROJECT_DIR$/application/test/controller/Mysqldb.php" />
+        <option value="$PROJECT_DIR$/application/test/view/captcha/index.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/application/test/controller/Captcha.php" />
+        <option value="$PROJECT_DIR$/application/test/view/upload/index.php" />
+        <option value="$PROJECT_DIR$/application/test/controller/Upload.php" />
+        <option value="$PROJECT_DIR$/application/test/view/uploads/index.php" />
+        <option value="$PROJECT_DIR$/application/test/controller/Uploads.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/index.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/userSchool.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/editUserSchool.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookUserSchool.php" />
+        <option value="$PROJECT_DIR$/application/game/controller/Index.php" />
+        <option value="$PROJECT_DIR$/public/getserverlist.php" />
+        <option value="$PROJECT_DIR$/../getserverlist.php" />
+        <option value="$PROJECT_DIR$/application/database.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/index.html" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/userHome.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/css/page.css" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/login.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/upload/3/杩涚▼妯″瀷涓嶪O妯″瀷.txt" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/upload/3/进度.txt" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/upload/3/python知识点.txt" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/xx.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/createCourseForm.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/add.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/model/User.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/model/UserData.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookBasicData.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookTCourse.html" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/addCourseForm.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/editUserAcademy.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/uploadFile2.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/uploadFile.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/js/test.js" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/js/jquery-1.7.2.min.js" />
+        <option value="$PROJECT_DIR$/application/route.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/model/CourseFile.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/model/Course.php" />
+        <option value="$PROJECT_DIR$/public/static/studySystem/left.html" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/uploadFile1.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/xxxxxxxx.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookTCourse.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookCourseMsg.php" />
+        <option value="$PROJECT_DIR$/application/studySystem/view/index/lookTCourseFile.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-59" />
+    <option name="y" value="131" />
+    <option name="width" value="1386" />
+    <option name="height" value="689" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="4" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(计算机学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(计算机学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="第3章-CC" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(计算机学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="第3章-CC" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="3-2C2" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="7" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(自动化学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(自动化学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="第1章-测试A" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="studySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="测试(自动化学院)" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="第1章-测试A" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="1-1A1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/static/studySystem/upload/3/python知识点.txt" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public\static\studySystem\upload\7\测试(自动化学院)\第1章-测试A\1-1A1" />
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public\static\studySystem\upload" />
+      <recent name="E:\phpStudy\PHPTutorial\WWW\tp5.0\application\test\view\mysqldb" />
+      <recent name="E:\phpStudy\PHPTutorial\WWW\tp5.0\application\test\view" />
+      <recent name="E:\phpStudy\PHPTutorial\WWW\tp5.0\application\studySystem\view\index" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public\static\studySystem\img" />
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public\static\studySystem\upload\7\测试(自动化学院)\第1章-测试A\1-1A1" />
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\view\index" />
+      <recent name="D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\model" />
+      <recent name="E:\phpStudy\PHPTutorial\WWW\tp5.0\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c9e470e-89ad-48b7-afa5-cef0ba555cad" name="Default" comment="" />
+      <created>1517890787633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517890787633</updated>
+      <workItem from="1517890788903" duration="11896000" />
+      <workItem from="1518062720172" duration="40623000" />
+      <workItem from="1518399467807" duration="35311000" />
+      <workItem from="1519348946230" duration="41431000" />
+      <workItem from="1519522371085" duration="184097000" />
+      <workItem from="1520326554251" duration="31791000" />
+      <workItem from="1523277419884" duration="71000" />
+      <workItem from="1523277584915" duration="2186000" />
+      <workItem from="1524118675577" duration="25785000" />
+      <workItem from="1524199195081" duration="38229000" />
+      <workItem from="1524634623183" duration="26841000" />
+      <workItem from="1524725640842" duration="15221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="453482000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25841874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24322917" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11269841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/studySystem/model/UserData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="e#128#144#0#PHP" expanded="false" />
+            <marker date="1524136214592" expanded="true" signature="715:764" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="990:1012" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="1278:1327" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="1385:1454" ph="update userd... " />
+            <marker date="1524136214592" expanded="true" signature="1506:1586" ph="insert into userdata... " />
+            <marker date="1524136214592" expanded="true" signature="1875:1924" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="1982:2054" ph="update userd... " />
+            <marker date="1524136214592" expanded="true" signature="2223:2306" ph="insert into userdata... " />
+            <marker date="1524136214592" expanded="true" signature="2551:2600" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="2658:2724" ph="update userd... " />
+            <marker date="1524136214592" expanded="true" signature="2893:2970" ph="insert into userdata... " />
+            <marker date="1524136214592" expanded="true" signature="3217:3266" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="3324:3394" ph="update userd... " />
+            <marker date="1524136214592" expanded="true" signature="3563:3644" ph="insert into userdata... " />
+            <marker date="1524136214592" expanded="true" signature="3901:3950" ph="select * fro... userdata" />
+            <marker date="1524136214592" expanded="true" signature="4008:4133" ph="update userd... " />
+            <marker date="1524136214592" expanded="true" signature="4302:4435" ph="insert into userdata... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/upload_data.php" />
+    <entry file="file://$PROJECT_DIR$/test/upload.html" />
+    <entry file="file://$PROJECT_DIR$/test/magicNumber.php" />
+    <entry file="file://$PROJECT_DIR$/test/array.php" />
+    <entry file="file://$PROJECT_DIR$/test/_SERVER.php" />
+    <entry file="file://$PROJECT_DIR$/test/_REQUEST.php" />
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5377">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/5aafa4bdda433.png" />
+    <entry file="file://$PROJECT_DIR$/public/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/addCourseForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15282">
+          <caret line="568" column="74" lean-forward="true" selection-start-line="568" selection-start-column="74" selection-end-line="568" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/addCourseForm2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/editUserAcademy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4941">
+          <caret line="185" column="51" lean-forward="false" selection-start-line="185" selection-start-column="51" selection-end-line="185" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2619">
+          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookUserAcademy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4941">
+          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1178" column="0" lean-forward="false" selection-start-line="1178" selection-start-column="0" selection-end-line="1178" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/userHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/userHomeHead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/jquery-1.8.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/ajaxfileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/cropper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/test.js" />
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2927">
+          <caret line="1" column="19023" lean-forward="false" selection-start-line="1" selection-start-column="19023" selection-end-line="1" selection-end-column="19023" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/amazeui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/jquery-1.10.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookBasicData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9774">
+          <caret line="364" column="46" lean-forward="false" selection-start-line="364" selection-start-column="46" selection-end-line="364" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/js/custom_up_img.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3051">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/test.php" />
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/uploadFilexxx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="82" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/model/CourseFile.php" />
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/controller/Mysqldb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1519538753153" expanded="true" signature="651:681" ph="insert into user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/model/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+          <folding>
+            <element signature="e#129#145#0#PHP" expanded="true" />
+            <marker date="1524676484920" expanded="true" signature="276:283" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="276:389" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="619:665" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="900:979" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="900:1001" ph="select * fro... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="1278:1337" ph="insert into course... " />
+            <marker date="1524676484920" expanded="true" signature="1278:1375" ph="insert into course... " />
+            <marker date="1524676484920" expanded="true" signature="1278:1398" ph="insert into course... " />
+            <marker date="1524676484920" expanded="true" signature="1278:1408" ph="insert into course... " />
+            <marker date="1524676484920" expanded="true" signature="1278:1411" ph="insert into course... " />
+            <marker date="1524676484920" expanded="true" signature="1586:1633" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="1586:1650" ph="select * fro... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1937" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1954" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1956" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1974" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1988" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:1989" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:2005" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:2006" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="1890:2007" ph="select cid f... course" />
+            <marker date="1524676484920" expanded="true" signature="2244:2312" ph="select cname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2244:2325" ph="select cname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2244:2329" ph="select cname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2581:2666" ph="select sname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2581:2679" ph="select sname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2581:2694" ph="select sname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2581:2696" ph="select sname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2581:2697" ph="select sname... coursemsg" />
+            <marker date="1524676484920" expanded="true" signature="2974:3124" ph="insert into coursemsg... " />
+            <marker date="1524676484920" expanded="true" signature="3347:3510" ph="insert into coursemsg... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/uploadFile1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#select#1;n#FORM#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#INPUT#1;n#FORM#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1524756725768" expanded="true" signature="4387:4829" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/xxxxxxxx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3529#3544#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/5ae014e653ec3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/init.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/upload/5acb68b25b27b.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/a.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="490" column="4" lean-forward="false" selection-start-line="490" selection-start-column="4" selection-end-line="493" selection-end-column="27" />
+          <folding>
+            <element signature="e#44#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookTCourse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="160" column="45" lean-forward="false" selection-start-line="160" selection-start-column="45" selection-end-line="160" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/studySystem/img/file.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookCourseMsg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/studySystem/view/index/lookTCourseFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="152" column="129" lean-forward="false" selection-start-line="152" selection-start-column="129" selection-end-line="152" selection-end-column="129" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4824#4830#0#HTML" expanded="true" />
+            <element signature="e#4830#4836#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#center#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4985#4991#0#HTML" expanded="true" />
+            <element signature="e#4991#4997#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
