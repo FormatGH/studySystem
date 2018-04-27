@@ -1,0 +1,474 @@
+---------------------------------------------------------------
+[ 2018-04-22T14:43:01+08:00 ] 127.0.0.1 GET /studySystem/login
+[ info ] localhost/studySystem/login [运行时间：0.250432s][吞吐率：3.99req/s] [内存消耗：1,394.53kb] [文件加载：43]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->login[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\login.php [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-22T14:43:02+08:00 ] 127.0.0.1 GET /studySystem/login
+[ info ] localhost/studySystem/login [运行时间：0.028671s][吞吐率：34.88req/s] [内存消耗：1,394.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->login[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\login.php [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-22T14:43:09+08:00 ] 127.0.0.1 POST /studySystem/checklogin
+[ info ] localhost/studySystem/checklogin [运行时间：0.544296s][吞吐率：1.84req/s] [内存消耗：1,804.59kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'checklogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '66',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 't',
+  'passwd' => 't',
+  'password' => 'e358efa489f58062f10dd7316b65649e',
+  'utype' => '1',
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->checklogin[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081386s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from user where username="t" and usertype=1 [ RunTime:0.016890s ]
+[ sql ] [ SQL ] select * from user where username="t" and password="e358efa489f58062f10dd7316b65649e" and usertype=1 [ RunTime:0.002113s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:43:09+08:00 ] 127.0.0.1 GET /studySystem/userHome
+[ info ] localhost/studySystem/userHome [运行时间：0.076824s][吞吐率：13.02req/s] [内存消耗：1,397.03kb] [文件加载：43]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'userHome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->userHome[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\userHome.php [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-22T14:43:09+08:00 ] 127.0.0.1 GET /studySystem/userHome/head
+[ info ] localhost/studySystem/userHome/head [运行时间：0.166472s][吞吐率：6.01req/s] [内存消耗：2,302.03kb] [文件加载：53]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'userHomeHead',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/userHome',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->userHomeHead[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\userHomeHead.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from userdata where uid = "4" [ RunTime:0.033190s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:43:12+08:00 ] 127.0.0.1 GET /studySystem/lookTCourse
+[ info ] localhost/studySystem/lookTCourse [运行时间：0.079403s][吞吐率：12.59req/s] [内存消耗：2,253.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'lookTCourse',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->lookTCourse[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookTCourse.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from course where tid = "4" [ RunTime:0.011279s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:43:13+08:00 ] 127.0.0.1 GET /studySystem/lookTCourse
+[ info ] localhost/studySystem/lookTCourse [运行时间：0.039850s][吞吐率：25.09req/s] [内存消耗：2,253.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'lookTCourse',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->lookTCourse[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookTCourse.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from course where tid = "4" [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:43:22+08:00 ] 127.0.0.1 GET /studySystem/addCourseForm
+[ info ] localhost/studySystem/addCourseForm [运行时间：0.108474s][吞吐率：9.22req/s] [内存消耗：2,286.44kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'addCourseForm',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->addCourseForm[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\addCourseForm.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from userdata where uid = "4" [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:43:22+08:00 ] 127.0.0.1 GET /studySystem/down-arrow.png
+[ info ] localhost/studySystem/down-arrow.png [运行时间：0.096043s][吞吐率：10.41req/s] [内存消耗：1,158.30kb] [文件加载：38]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'down-arrow.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/addCourseForm',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-22T14:45:13+08:00 ] 127.0.0.1 GET /studySystem/addCourseForm
+[ info ] localhost/studySystem/addCourseForm [运行时间：0.124676s][吞吐率：8.02req/s] [内存消耗：2,464.59kb] [文件加载：54]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'addCourseForm',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->addCourseForm[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\addCourseForm.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from userdata where uid = "4" [ RunTime:0.000633s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:45:13+08:00 ] 127.0.0.1 GET /studySystem/down-arrow.png
+[ info ] localhost/studySystem/down-arrow.png [运行时间：0.026322s][吞吐率：37.99req/s] [内存消耗：1,158.30kb] [文件加载：38]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'down-arrow.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/addCourseForm',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-22T14:49:25+08:00 ] 127.0.0.1 GET /studySystem/uploadFile1
+[ info ] localhost/studySystem/uploadFile1 [运行时间：0.100413s][吞吐率：9.96req/s] [内存消耗：2,253.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'uploadFile1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->uploadFile1[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\uploadFile.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011421s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from course where tid = "4" [ RunTime:0.001684s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:53:32+08:00 ] 127.0.0.1 GET /studySystem/addCourseForm
+[ info ] localhost/studySystem/addCourseForm [运行时间：0.077141s][吞吐率：12.96req/s] [内存消耗：2,286.44kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'addCourseForm',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/static/studySystem/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->addCourseForm[ D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ VIEW ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\addCourseForm.php [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:host=127.0.0.1;dbname=studysystem;charset=utf8
+[ sql ] [ SQL ] select * from userdata where uid = "4" [ RunTime:0.001248s ]
+---------------------------------------------------------------
+[ 2018-04-22T14:53:32+08:00 ] 127.0.0.1 GET /studySystem/down-arrow.png
+[ info ] localhost/studySystem/down-arrow.png [运行时间：0.027905s][吞吐率：35.84req/s] [内存消耗：1,158.30kb] [文件加载：38]
+[ info ] [ LANG ] D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'down-arrow.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=29fq085kndff5foj0e5bl8gpc2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/studySystem/addCourseForm',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,548 @@
+---------------------------------------------------------------
+[ 2018-03-16T11:13:27+08:00 ] 127.0.0.1 GET /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.572748s][吞吐率：1.75req/s] [内存消耗：1,140.87kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServer',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:14:05+08:00 ] 127.0.0.1 GET /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.039294s][吞吐率：25.45req/s] [内存消耗：1,136.21kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServer',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:14:18+08:00 ] 127.0.0.1 GET /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.031371s][吞吐率：31.88req/s] [内存消耗：1,110.30kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:19:23+08:00 ] 127.0.0.1 POST /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.097545s][吞吐率：10.25req/s] [内存消耗：1,147.42kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '835e94e9-6d98-49ce-8885-4b262b7a39bd',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\game\controller\int()[E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php:13]
+---------------------------------------------------------------
+[ 2018-03-16T11:20:04+08:00 ] 127.0.0.1 POST /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.012571s][吞吐率：79.55req/s] [内存消耗：1,111.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'f5d675f9-4f2c-4fcf-a85d-0bffb45e6457',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:22:08+08:00 ] 127.0.0.1 POST /game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.015796s][吞吐率：63.31req/s] [内存消耗：1,112.23kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '67700e47-22e2-4171-b3b8-91f401018859',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:23:33+08:00 ] 127.0.0.1 POST /game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.012766s][吞吐率：78.33req/s] [内存消耗：1,112.52kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'b0aaf276-88c5-47ac-8be7-995d3c26bbb7',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:26:32+08:00 ] 127.0.0.1 POST /game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?pid=1&gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.014886s][吞吐率：67.18req/s] [内存消耗：1,114.27kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6bffd4f0-37cd-4121-a566-b85635406886',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:26:38+08:00 ] 127.0.0.1 POST /game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.013033s][吞吐率：76.73req/s] [内存消耗：1,113.99kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '44a58a0d-a4b3-49ed-bef3-2a977500ea9a',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:29:12+08:00 ] 127.0.0.1 POST /game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.032570s][吞吐率：30.70req/s] [内存消耗：1,114.52kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '62314c82-9b90-498e-9a2d-ebb4ee2db1a1',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:33:52+08:00 ] 127.0.0.1 POST /game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl
+[ info ] localhost/game/getServerList?gid=12112&time=1521170468&ext=sss&sign=PIRr5zMQfNQ31dnkV26Zkl [运行时间：0.015140s][吞吐率：66.05req/s] [内存消耗：1,114.70kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=cst2dukd62ptcplojb5pgfi614',
+  'host' => 'localhost',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'a97d5b87-950d-4843-87fe-9af6eba485f1',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'gid' => '12112',
+  'time' => '1521170468',
+  'ext' => 'sss',
+  'sign' => 'PIRr5zMQfNQ31dnkV26Zkl',
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T11:34:33+08:00 ] 127.0.0.1 GET /game/getServerList
+[ info ] localhost/game/getServerList [运行时间：0.013375s][吞吐率：74.77req/s] [内存消耗：1,115.07kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'game',
+    1 => 'Index',
+    2 => 'getServerList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\game\controller\Index->getServerList[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\game\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T14:13:28+08:00 ] 127.0.0.1 GET /test2
+[ info ] localhost/test2 [运行时间：0.568942s][吞吐率：1.76req/s] [内存消耗：1,379.57kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'updateUserData',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-16T14:15:28+08:00 ] 127.0.0.1 GET /test2
+[ info ] localhost/test2 [运行时间：0.362367s][吞吐率：2.76req/s] [内存消耗：2,241.54kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'getUserData2',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9; PHPSESSID=tr3tqp0ueascapm5cq4isphas1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->getUserData2[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137537s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] select * from userdata [ RunTime:0.027280s ]
+[ error ] [0]variable type error： array[E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\library\think\Response.php:318]
+---------------------------------------------------------------
+[ 2018-03-16T14:16:17+08:00 ] 127.0.0.1 GET /test2
+[ info ] localhost/test2 [运行时间：0.027076s][吞吐率：36.93req/s] [内存消耗：2,220.12kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'getUserData2',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9; PHPSESSID=tr3tqp0ueascapm5cq4isphas1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->getUserData2[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001240s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] select * from userdata [ RunTime:0.000627s ]
+---------------------------------------------------------------
+[ 2018-03-16T14:20:04+08:00 ] 127.0.0.1 GET /test2
+[ info ] localhost/test2 [运行时间：0.026694s][吞吐率：37.46req/s] [内存消耗：2,220.38kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'studySystem',
+    1 => 'Index',
+    2 => 'getUserData2',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=8334624768; Phpstorm-d94e29df=3e57be35-439d-4c88-96f0-17e535265bc9; PHPSESSID=tr3tqp0ueascapm5cq4isphas1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\studySystem\controller\Index->getUserData2[ E:\phpStudy\PHPTutorial\WWW\tp5.0\application\studySystem\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001227s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] select * from userdata [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2018-03-16T15:34:24+08:00 ] 127.0.0.1 GET /getServerList
+[ info ] 127.0.0.1/getServerList [运行时间：0.035560s][吞吐率：28.12req/s] [内存消耗：1,136.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\tp5.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'getServerList',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
