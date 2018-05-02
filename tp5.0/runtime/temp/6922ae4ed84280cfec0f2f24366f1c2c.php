@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookCourseMsg.php";i:1524819684;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookCourseMsg.php";i:1525229272;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -120,13 +120,8 @@
  * 获取用户信息
 */
 use app\studySystem\controller\Index;
-$uid=$_SESSION['uid'];
 $c=new Index();
-$data=$c->getUserData($uid);
-$coursename=$_GET['coursename'];
-$academy=$_GET['academy'];
-$cid=$c->getCid($uid,$coursename,$academy)['cid'];
-$chapter=$c->getCourse($uid,$coursename,$academy)['data']['chapter'];
+
 
 ?>
 
@@ -144,7 +139,7 @@ $chapter=$c->getCourse($uid,$coursename,$academy)['data']['chapter'];
 
                 $cname=$c->getCName($cid,$i)['cname'];
                 echo '&nbsp;&nbsp;' .$i . '、' . $cname . '<br>';
-                $section=$c->getSection($cid,$chapter)['section'];
+                $section=$c->getSection($cid,$i)['section'];
                 for($j=1;$j<=$section;$j++){
                     $sname=$c->getSName($cid,$i,$j)['sname'];
                     echo '&nbsp;&nbsp;&nbsp;&nbsp;';

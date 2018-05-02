@@ -474,11 +474,10 @@ use app\studySystem\controller\Index;
 $uid = $_SESSION['uid'];
 $c = new Index();
 $data = $c->getUserData($uid);
-$dataresult = $data['result'];
-if ($dataresult) {
+if ($data) {
 //    $realname = $data['data']['realname'] == "" ? "(未填写)" : $data['data']['realname'];
 //    $number = $data['data']['number'] == "" ? "(未填写)" : $data['data']['number'];
-    $academy = $data['data']['academy'] == "" ? "(未选择)" : $data['data']['academy'];
+    $academy = $data['academy'] == "" ? "(未选择)" : $data['academy'];
 } else {
 //    $realname = "";
 //    $number = "";

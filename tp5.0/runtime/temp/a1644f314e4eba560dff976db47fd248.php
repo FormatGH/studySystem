@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:110:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookUserAcademy.php";i:1521462322;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:110:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookUserAcademy.php";i:1524990772;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
 <head>
@@ -128,11 +128,10 @@
     $uid=$_SESSION['uid'];
     $c=new Index();
     $data=$c->getUserData($uid);
-    $dataresult=$data['result'];
-    if($dataresult){
-        $realname=$data['data']['realname']==""?"(未填写)":$data['data']['realname'];
-        $number=$data['data']['number']==""?"(未填写)":$data['data']['number'];
-        $academy=$data['data']['academy']==""?"(未选择)":$data['data']['academy'];
+    if($data){
+        $realname=$data['realname']==""?"(未填写)":$data['realname'];
+        $number=$data['number']==""?"(未填写)":$data['number'];
+        $academy=$data['academy']==""?"(未选择)":$data['academy'];
     }else{
         $realname="(未填写)";
         $number="(未填写)";

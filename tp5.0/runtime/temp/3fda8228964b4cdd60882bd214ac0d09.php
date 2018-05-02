@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\userHomeHead.php";i:1520238071;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:107:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\userHomeHead.php";i:1524989777;}*/ ?>
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +12,7 @@
 <body>
 	<!-- 头部 -->
 	<div class="head">
-		<div class="headL">
+		<div class="headL" style="text-align: left" >
             <?php
             use app\studySystem\controller\Index;
             $user=unserialize($_SESSION['myuser']);
@@ -21,9 +21,9 @@
             $uid=$_SESSION['uid'];
             $c=new Index();
             $data=$c->getUserData($uid);
-            $dataresult=$data['result'];
-            if($dataresult){
-                $imagename=$data['data']['photo']==""?"init.png":$data['data']['photo'];
+            //$dataresult=$data['result'];
+            if($data){
+                $imagename=$data['photo']==""?"init.png":$data['photo'];
             }else{
                 $imagename="init.png";
             }
@@ -42,6 +42,10 @@
             ?>
             <a href="/studySystem/logout"  target="_parent" > 【退出】</a>
 		</div>
+        <div style="font-family: KaiTi;font-size: x-large;font-weight: 900">
+            <br>
+            欢迎使用课程学习系统
+        </div>
 		<div class="headR">
 			<span style="color:#FFF">欢迎：
                 <?php

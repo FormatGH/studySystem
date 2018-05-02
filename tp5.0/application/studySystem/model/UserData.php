@@ -37,9 +37,9 @@ class UserData extends Model
     {
         $result=Db::query('select * from userdata where uid = "' .$uid  . '"');
        if($result){
-           return array("result"=>true,"data"=>$result['0']);
+           return $result['0'];
        }else{
-           return array("result"=>false);
+           return $result;
        }
     }
 

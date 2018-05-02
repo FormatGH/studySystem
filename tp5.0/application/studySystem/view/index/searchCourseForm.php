@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
 
+    <script  src="/static/studySystem/js/jquery-1.7.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/studySystem/css/font-awesome.4.6.0.css">
     <link rel="stylesheet" href="/static/studySystem/css/amazeui.min.css">
     <link rel="stylesheet" href="/static/studySystem/css/amazeui.cropper.css">
@@ -17,7 +18,7 @@
         .dark-matter {
             margin-left: auto;
             margin-right: auto;
-            height: 100%;
+            height: 580pt;
             /*max-width: 500px;*/
             background: #555;
             padding: 20px 30px 20px 30px;
@@ -108,10 +109,61 @@
 
     </style>
 
+    <script>
+        function f() {
+            alert('xxxx');
+            form=document.getElementById('searchform');
+            form.submit();
+        }
+    </script>
+
+
+
+    <script>
+        $(function () {
+            $('#simg').click(function(){
+                    alert('submit');
+                var search=$('#search').val();
+                var value=$('#value').val();
+                var academy=$('#academy').val();
+                $.ajax({
+                    async:false,
+                    type:"POST",
+                    url:"http://localhost/studySystem/searchCourse",
+                    data: {"search":search,"value":value,"academy":academy},
+                    dataType:"json",
+                    success:function(data){
+                        alert(data);
+                        $('#result').html(data);
+                    }
+                });
+            });
+
+            $('#academy').change(function(){
+                alert('submit');
+                var search=$('#search').val();
+                var value=$('#value').val();
+                var academy=$('#academy').val();
+                $.ajax({
+                    async:false,
+                    type:"POST",
+                    url:"http://localhost/studySystem/searchCourse",
+                    data: {"search":search,"value":value,"academy":academy},
+                    dataType:"json",
+                    success:function(data){
+                        alert(data);
+                        $('#result').html(data);
+                    }
+                });
+            });
+        })
+
+    </script>
+
 
 
 </head>
-<body style="     background: #555;color: #D3D3D3;">
+<body style="background: #555;color: #D3D3D3;">
 
 <?php
 
@@ -119,39 +171,48 @@
  * 获取用户信息
 */
 use app\studySystem\controller\Index;
+$uid=$_SESSION['uid'];
 $c=new Index();
+$data=$c->getUserData($uid);
+$academy=$data['academy'];
 
 
 ?>
 
 <div class="dark-matter" align="" style="">
-    <h1>课程大纲
-        <span>Please fill all the texts in the fields.</span>
+    <h1>选课中心
+        <span>请按条件搜索后，选择你喜欢的课程.</span>
     </h1>
-    <center>
+    <center style="color: black;font-family: KaiTi;font-size: large">
+        <div style="float: left;margin-left: 30%">
+            面向学院:
+            <select name="academy" id="academy" style="width: 90pt;height: 23pt">
+                <option value="所有学院" selected="selected">&nbsp;&nbsp;所有学院</option>
+                <option value="{$academy}">&nbsp;{$academy}</option>
+            </select>
 
-        <div  align="left" style="align-self:center;width:400pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: left;align-content: center">
-            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;《{$coursename}》--({$academy}) <br>
-            <?php
+            &nbsp;搜索
+            <select name="search" id="search" style="width: 110pt;height: 23pt">
+                <option value="all" selected="selected">&nbsp;课程名和教师名</option>
+                <option value="coursename">&nbsp;&nbsp;&nbsp;&nbsp;课程名</option>
+                <option value="teacher">&nbsp;&nbsp;&nbsp;&nbsp;教师名</option>
+            </select>
+        </div >
+            <div style="float: left">
+                <input name="value" id="value" style="height: 24pt">
+                <img id="simg" src="/static/studySystem/img/search.png">
+            </div>
 
-            for($i=1;$i<=$chapter;$i++){
+        <br>
+        <br>
+        <br>
 
-                $cname=$c->getCName($cid,$i)['cname'];
-                echo '&nbsp;&nbsp;' .$i . '、' . $cname . '<br>';
-                $section=$c->getSection($cid,$i)['section'];
-                for($j=1;$j<=$section;$j++){
-                    $sname=$c->getSName($cid,$i,$j)['sname'];
-                    echo '&nbsp;&nbsp;&nbsp;&nbsp;';
-                    echo $i;
-                    echo '-';
-                    echo   $j . '.' . $sname . '<br>';
-                }
-                echo '<br>';
 
-                //var_dump($sname);
-            }
-            ?>
 
+
+        <div id="result" >
+
+            xxx
 
         </div>
     </center>

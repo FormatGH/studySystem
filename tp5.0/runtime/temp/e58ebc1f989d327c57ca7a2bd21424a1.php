@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookBasicData.php";i:1524136564;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookBasicData.php";i:1524990644;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +14,11 @@
     $uid=$_SESSION['uid'];
     $c=new Index();
     $data=$c->getUserData($uid);
-    $dataresult=$data['result'];
-    if($dataresult){
-        $imagename=$data['data']['photo']==""?"init.png":$data['data']['photo'];
-        $realname=$data['data']['realname']==""?"(未填写)":$data['data']['realname'];
-        $email=$data['data']['email']==""?"(未填写)":$data['data']['email'];
-        $message=$data['data']['message']==""?"(未填写)":$data['data']['message'];
+    if($data){
+        $imagename=$data['photo']==""?"init.png":$data['photo'];
+        $realname=$data['realname']==""?"(未填写)":$data['realname'];
+        $email=$data['email']==""?"(未填写)":$data['email'];
+        $message=$data['message']==""?"(未填写)":$data['message'];
 
     }else{
         $imagename="init.png";

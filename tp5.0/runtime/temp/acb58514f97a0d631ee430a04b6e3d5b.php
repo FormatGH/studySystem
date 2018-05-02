@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\addCourseForm.php";i:1524465852;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:108:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\addCourseForm.php";i:1524991368;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -475,11 +475,10 @@ use app\studySystem\controller\Index;
 $uid = $_SESSION['uid'];
 $c = new Index();
 $data = $c->getUserData($uid);
-$dataresult = $data['result'];
-if ($dataresult) {
+if ($data) {
 //    $realname = $data['data']['realname'] == "" ? "(未填写)" : $data['data']['realname'];
 //    $number = $data['data']['number'] == "" ? "(未填写)" : $data['data']['number'];
-    $academy = $data['data']['academy'] == "" ? "(未选择)" : $data['data']['academy'];
+    $academy = $data['academy'] == "" ? "(未选择)" : $data['academy'];
 } else {
 //    $realname = "";
 //    $number = "";

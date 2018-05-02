@@ -1,6 +1,8 @@
 <?php
 namespace app\studySystem\controller;
+use app\studySystem\model\Academy;
 use app\studySystem\model\Course;
+use app\studySystem\model\SCourse;
 use think\Request;
 header('Content-type:text/html;charset=utf-8');
 ob_start();
@@ -89,8 +91,12 @@ class Index extends Controller
      * 退出
      */
     public function logout(){
+        if(isset($_SESSION['uid'])){
+            unset($_SESSION['uid']);
+        }
         if(isset($_SESSION['myuser'])){
             unset($_SESSION['myuser']);
+
             return $this->redirect('/studySystem/login');
         }
     }
@@ -261,7 +267,7 @@ class Index extends Controller
         return view('editUserAcademy');
     }
 
-    public function uploadFile1(Request $request){
+    public function uploadFileForm(Request $request){
         $index=new Index();
         if($request->isPost()){
             $cid=$_POST['cid'];
@@ -299,7 +305,7 @@ class Index extends Controller
 //            $this->assign('courses',$courses);
 //            $this->display();
             //var_dump($courses);
-            return view('uploadFile1');
+            return view('uploadFileForm');
         }
 
 
@@ -323,7 +329,8 @@ class Index extends Controller
         $cname=$this->getCName($cid,$chapter)['cname'];
         $sname=$this->getSName($cid,$chapter,$section)['sname'];
         $dir=$coursename . "(" . $academy . ")";
-
+        $ftype=$_POST['ftype'];
+        $returnaddr=$_POST['returnaddr'];
         $types=explode('/',$_POST['ftypes']);
         //var_dump($types);
 
@@ -334,11 +341,12 @@ class Index extends Controller
 //        echo $coursename;
 
         $filename=$_FILES['file']['name'];
+
         $endstr=explode('.',$filename)[1];
         if(! in_array($endstr,$types)){
             echo "<script>alert('文件只允许" . $_POST['ftypes'] . "这些格式')</script>";
             $this->assign('ftype',$_POST['ftype']);
-            return view('uploadFile1');
+            return $this->redirect($returnaddr);
         }
         //$filename=$chapter . "-" . $section;
         $tmp_name=$_FILES['file']['tmp_name'];
@@ -366,11 +374,12 @@ class Index extends Controller
             $res=mkdir(iconv("UTF-8", "GBK", $path),0777,true);
         }
        $info=move_uploaded_file($tmp_name,iconv("UTF-8", "GBK", $path . DS) .iconv("UTF-8", "GBK",$filename ));
-        $this->addCourseFile($cid,$chapter,$section,$filename,$endstr);
+        $this->addCourseFile($cid,$chapter,$section,$filename,$ftype);
+        return $this->redirect($returnaddr);
         //        //$info = $file->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'studySystem'. DS . 'upload'  );
 //        if ($info) {
 //            $this->success('文件上传成功：' . $info->getRealPath());
-//        } else {
+//        } else
 //// 上传失败获取错误信息
 //            $this->error($file->getError());
 //        }
@@ -482,11 +491,31 @@ class Index extends Controller
     }
 
     public function lookTCourseFile(){
-        $coursename=$_GET['coursename'];
-        $academy=$_GET['academy'];
+    $cid=$_GET['cid'];
+    $course=$this->getCourseByCid($cid);
+    $coursename=$course['coursename'];
+    $academy=$course['academy'];
+    $tid=$_SESSION['uid'];
+    $chapter=$course['chapter'];
+//        var_dump($course);
+//        echo $cid;
+//        echo $academy;
+//        echo $coursename;
+    $this->assign('cid',$cid);
+    $this->assign('tid',$tid);
+    $this->assign('coursename',$coursename);
+    $this->assign('academy',$academy);
+    $this->assign('course',$course);
+    $this->assign('chapter',$chapter);
+    return view('lookTCourseFile');
+}
+
+    public function lookTCourseVideo(){
+        $cid=$_GET['cid'];
+        $course=$this->getCourseByCid($cid);
+        $coursename=$course['coursename'];
+        $academy=$course['academy'];
         $tid=$_SESSION['uid'];
-        $course=$this->getCourse($tid,$coursename,$academy)['data'];
-        $cid=$course['cid'];
         $chapter=$course['chapter'];
 //        var_dump($course);
 //        echo $cid;
@@ -498,10 +527,23 @@ class Index extends Controller
         $this->assign('academy',$academy);
         $this->assign('course',$course);
         $this->assign('chapter',$chapter);
-        return view('lookTCourseFile');
+        return view('lookTCourseVideo');
     }
 
     public function lookCourseMsg(){
+        $cid=$_GET['cid'];
+        $course=$this->getCourseByCid($cid);
+        $coursename=$course['coursename'];
+        $academy=$course['academy'];
+        $tid=$_SESSION['uid'];
+        $chapter=$course['chapter'];
+
+        $this->assign('cid',$cid);
+        $this->assign('tid',$tid);
+        $this->assign('coursename',$coursename);
+        $this->assign('academy',$academy);
+        $this->assign('course',$course);
+        $this->assign('chapter',$chapter);
         return view('lookCourseMsg');
     }
 
@@ -512,6 +554,222 @@ class Index extends Controller
         $c->addCourseFile($cid,$chapter,$section,$filename,$filetype);
     }
 
+    /*
+ * 获取所有学院
+ */
+    public function getAcademy()
+    {
+        $a=new Academy();
+        $academy=$a->getAcademy();
+        return $academy;
+    }
+
+
+    public  function getCourseFile($cid,$chapter,$section,$filetype){
+        $c=new Course();
+        $result=$c->getCourseFile($cid,$chapter,$section,$filetype);
+        return $result;
+    }
+
+    public function searchCourseForm(){
+        return view('searchCourseForm');
+    }
+
+    public function addSCourse()
+    {
+        $sc=new SCourse();
+        $sid=$_GET['sid'];
+        $cid=$_GET['cid'];
+        $sc->addSCourse($sid,$cid);
+        echo '<script>alert("选课成功！")</script>';
+        return view('searchCourseForm');
+    }
+
+    public function searchCourse(){
+        //echo json_encode('xxx');
+        $uid=$_SESSION['uid'];
+        $course=new Course();
+        $search=$_POST['search'];
+        $value=$_POST['value'];
+        $post_academy=$_POST['academy'];
+        $result=$course->searchCourse($post_academy,$search,$value);
+        $str='';
+        if($result['status']){
+
+        for($i=0;$i<count($result['result']);$i++){
+            $coursename=$result['result'][$i]['coursename'];
+            $academy=$result['result'][$i]['academy'];
+            $tid=$result['result'][$i]['tid'];
+            $userdata=$this->getUserData($tid);
+            $teacher=$userdata['realname'];
+            $cid=$result['result'][$i]['cid'];
+            $str .='
+           <div id="edit" align="center" style="margin-left:5%;margin-top:2%;float: left; align-self:center;width:200pt;height:220pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: left;talign-content: center">
+        
+                <label style="color: yellow;">
+                    <center>
+                        <img src="/static/studySystem/img/logBanner.png" style="margin-top:5%;height: 90pt;width: 90pt;">
+
+                    </center>
+                    <br>
+                    <a href="/studySystem/LookCourseMsg?cid=' . $cid  . '" target="_blank">
+                    
+                    
+                    <x style="color: #D3D3D3;text-align: left" >&nbsp;&nbsp;课程名:</x>
+                    《'. $coursename . '》
+                    </a>
+                    <br>
+                    <a href="/studySystem/lookAcademyMsg?academy=' . $academy  . '" target="_blank">
+                    <x style="color: #D3D3D3">&nbsp;&nbsp;学院:</x>
+                    '. $academy . '
+                    </a>
+                    <a href="/studySystem/lookTeacherMsg?tname=' . $teacher  . '" target="_blank">
+                    <br>
+                        <x style="color: #D3D3D3;text-align: left">&nbsp;&nbsp;教师:</x>
+                    '. $teacher . '
+                    </a>
+                    <br>
+
+                    <br>
+                    &nbsp;&nbsp;
+                    <button style="	background: #FFCC02;
+			border: none;
+			padding: 5px 20px 5px 20px;
+			color: #585858;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			text-shadow: 1px 1px 1px #FFE477;
+			font-weight: bold;
+			box-shadow: 1px 1px 1px #3D3D3D;
+			-webkit-box-shadow:1px 1px 1px #3D3D3D;
+			-moz-box-shadow:1px 1px 1px #3D3D3D;">
+                     <a style="color: black" href="/studySystem/addSCourse?sid=' . $uid . '&cid=' . $cid . '">加入我的课程</a>
+                    </button>
+
+                </label>
+        </div>
+        ';
+        }
+
+        }else{
+            $str=$result['result'];
+        }
+//
+//        <br>
+//                    &nbsp;
+//        <a style="font-size: small;font-family: \'Microsoft Yahei\'" href="/studySystem/LookTCourseFile?cid=' . $cid  . '" target="_blank"><文件资料</a>
+//                    <a href="/studySystem/LookCourseMsg?cid=' . $cid  . '" target="_blank" style="color:red;font-size: small;font-family: \'Microsoft Yahei\'">课程大纲</a>
+//
+//                        <a style="font-size: small;font-family: \'Microsoft Yahei\'" href="/studySystem/LookTCourseVideo?cid=' . $cid  . '">视频资料></a>
+//                    <br>
+
+       echo json_encode(
+            $str
+        );
+    }
+
+    public function lookSCourse(){
+        $sc=new SCourse();
+        $sid=$_SESSION['uid'];
+        $scourse=$sc->getSCourse($sid);
+
+            $this->assign('scourse',$scourse);
+            return view('lookSCourse');
+
+//        $cid=$_GET['cid'];
+//        $course=$this->getCourseByCid($cid);
+//        $coursename=$course['coursename'];
+//        $academy=$course['academy'];
+//        $tid=$_SESSION['uid'];
+//        $chapter=$course['chapter'];
+//
+//        $this->assign('cid',$cid);
+//        $this->assign('tid',$tid);
+//        $this->assign('coursename',$coursename);
+//        $this->assign('academy',$academy);
+//        $this->assign('course',$course);
+//        $this->assign('chapter',$chapter);
+//        return view('lookCourseMsg');
+    }
+
+    public function studyCourse()
+    {
+        $cid=$_GET['cid'];
+        echo $cid;
+        $sid = $_SESSION['uid'];
+        $course=$this->getCourseByCid($cid);
+        $this->assign('course', $course);
+        $this->assign('cid', $cid);
+        return view('studyCourse');
+
+//        $scourse = $sc->getSCourse($sid);
+//
+//        $this->assign('scourse', $scourse);
+//        return view('lookSCourse');
+    }
+
+    function sGetSection(){
+
+        $cid=$_POST['cid'];
+        $post_chapter=$_POST['chapter'];
+        $section=$this->getSection($cid,$post_chapter)['section'];
+        $opt = '<option>--请选择节数--</option>';
+        for($i=1;$i<=$section;$i++) {
+            $sname = $this->getSName($cid, $post_chapter, $i)['sname'];
+            $opt .= $sname;
+            $opt .= "<option value='{$i}'>第{$post_chapter}-{$i}节 ({$sname})</option>";
+        }
+        echo json_encode($opt);
+    }
+
+    function studyVideo(){
+    $cid=$_GET['cid'];
+    $chapter=$_GET['chapter'];
+    $section=$_GET['section'];
+    $course=$this->getCourseByCid($cid);
+    $tid=$course['tid'];
+    $coursename=$course['coursename'];
+    $academy=$course['academy'];
+    $cname=$this->getCName($cid,$chapter)['cname'];
+    $sname=$this->getSName($cid,$chapter,$section)['sname'];
+    $filename=$this->getCourseFile($cid,$chapter,$section,'video')['filename'];
+    $src="/static/studySystem/upload/". $tid . "/". $coursename . "(" . $academy . ")/第" . $chapter . "章-" . $cname ."/" .$chapter ."-" .$section .$sname  . "/" . $filename;
+    $this->assign('src',$src);
+    return view('studyVideo');
+
+    }
+
+    function studyFile(){
+        $cid=$_GET['cid'];
+        $chapter=$_GET['chapter'];
+        $section=$_GET['section'];
+        $course=$this->getCourseByCid($cid);
+        $tid=$course['tid'];
+        $coursename=$course['coursename'];
+        $academy=$course['academy'];
+        $cname=$this->getCName($cid,$chapter)['cname'];
+        $sname=$this->getSName($cid,$chapter,$section)['sname'];
+        $filename=$this->getCourseFile($cid,$chapter,$section,'file')['filename'];
+        $src="/static/studySystem/upload/". $tid . "/". $coursename . "(" . $academy . ")/第" . $chapter . "章-" . $cname ."/" .$chapter ."-" .$section .$sname  . "/" . $filename;
+        $this->assign('src',$src);
+        return view('studyFile');
+
+    }
+
+    function studyCourseMsg(){
+        $cid=$_GET['cid'];
+        $course=$this->getCourseByCid($cid);
+        $chapter=$course['chapter'];
+        $coursename=$course['coursename'];
+        $academy=$course['academy'];
+        $this->assign('cid',$cid);
+        $this->assign('coursename',$coursename);
+        $this->assign('academy',$academy);
+        $this->assign('chapter',$chapter);
+        return view('studyCourseMsg');
+
+    }
 
     function showPage($page,$totalPage,$where=null,$sep="&nbsp;"){
         $p="";
@@ -539,9 +797,7 @@ class Index extends Controller
 
 
     public function test(){
-      $data=$this->getSection(17,1)['section'];
-        $sname=$this->getSName(17,2,2)['sname'];
-      echo $sname;
+      return view('test');
     }
 
 }

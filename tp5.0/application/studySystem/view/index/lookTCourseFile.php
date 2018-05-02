@@ -12,6 +12,42 @@
         .up-img-cover img{width: 100%;}
     </style>
 
+    <style>
+        .file {
+            position: relative;
+            display: inline-block;
+            background: #ccc;
+            border: 1px solid #333;
+            padding: 2px 10px;
+            overflow: hidden;
+            text-decoration: none;
+            text-indent: 0;
+            line-height: 20px;
+            border-radius: 20px;
+            color: #333;
+            font-size: 13px;
+
+        }
+        .file input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+
+        .gradient{
+
+            filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);
+            -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);/*IE8*/
+            background:#ccc; /* 一些不支持背景渐变的浏览器 */
+            background:-moz-linear-gradient(top, #fff, #ccc);
+            background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ccc));
+            background:-o-linear-gradient(top, #fff, #ccc);
+        }
+    </style>
+
     <!--新增-->
     <style>
         .dark-matter {
@@ -108,7 +144,14 @@
 
     </style>
 
+<script>
+    function upload(x) {  alert('xxx');
 
+        upload=document.getElementById('upload'+x);
+        upload.submit();
+
+    }
+</script>
 
 </head>
 <body style="background: #555;color: #D3D3D3;">
@@ -123,7 +166,7 @@ use app\studySystem\controller\Index;
 $uid=$_SESSION['uid'];
 $c=new Index();
 $userdata=$c->getUserData($uid);
-
+$tid=$c->getCourseByCid($cid)['tid'];
 
 ?>
 
@@ -133,34 +176,73 @@ $userdata=$c->getUserData($uid);
     </h1>
     <center>
 <?php
+
+    $filetype='file';
+
     for($i=1;$i<=$chapter;$i++){
         $cname=$c->getCName($cid,$i)['cname'];
         ?>
 
-        <div id="look" align="center" style="align-self:center;width:600pt;height:120pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: center;align-content: center">
+        <div id="look" align="center" style="align-self:center;width:600pt;height:150pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: center;align-content: center">
             第{$i}章:{$cname}
             <br>
 <!--            --><?php
             $section=$c->getSection($cid,$i)['section'];
             for($j=1;$j<=$section;$j++){
                 $sname=$c->getSName($cid,$i,$j)['sname'];
-                ?>
 
-                <div style="text-align: left;float: left;margin-left:5%;margin-top:2%;" >
-                    第{$i}-{$j}节:{$sname}
-<!--                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/test.pdf">-->
-                    <br>
-                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/a.docx"  target="_blank">
-                        &nbsp;&nbsp;
-                    <img style="width: 40pt;height: 40pt" src="/static/studySystem/img/file.png" >
-                    <br>
-                        &nbsp;&nbsp;
-                        {$sname}
+                $file=$c->getCourseFile($cid,$i,$j,$filetype);
+                if($file) {
+
+
+                    ?>
+
+                    <div style="text-align: left;float: left;margin-left:5%;margin-top:2%;">
+                        第{$i}-{$j}节:{$sname}
+                        <!--                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/test.pdf">-->
+                        <br>
+                        <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/{$file['filename']}"
+                           target="_blank">
+                            &nbsp;&nbsp;
+                            <img style="width: 40pt;height: 40pt" src="/static/studySystem/img/file.png">
+                            <br>
+                            &nbsp;&nbsp;
+                            {$sname}
                         </a>
-                </div>
+                        <br>
+
+
+                    </div>
+
+                    <?php
+                }else{
+
+
+                    ?>
+                    <div style="text-align: left;float: left;margin-left:5%;margin-top:2%;">
+                        第{$i}-{$j}节:{$sname}
+                        <!--                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/test.pdf">-->
+                        <br>
+                        <p style="color: red">还未上传资料</p>
+
+
+                        <a href="javascript:;" class="file gradient">上传
+                            <form id="upload{$i}_{$j}" method="post" enctype="multipart/form-data"
+                                  action="/studySystem/uploadFile2">
+                                <input name="returnaddr" hidden="hidden" value="/studySystem/lookTCourseFile?coursename={$coursename}&academy={$academy}"/>
+                                <input name="ftypes" hidden="hidden" value="pdf"/>
+                                <input name="ftype" hidden="hidden" value="file"/>
+                                <input hidden="hidden" name="coursename" value="{$cid}">
+
+                                <input hidden="hidden" name="chapter" value="{$i}">
+                                <input hidden="hidden" name="section" value="{$j}">
+                                <input type="file" name="file" style="color: transparent;" onchange="upload('{$i}_{$j}')">
+                            </form>
+                        </a>
+                    </div>
 
             <?php
-
+                }
             }
 //            ?>
 

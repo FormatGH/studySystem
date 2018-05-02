@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:110:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\editUserAcademy.php";i:1524635217;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:110:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\editUserAcademy.php";i:1524994581;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
 <head>
@@ -182,16 +182,17 @@ use app\studySystem\controller\Index;
 $uid = $_SESSION['uid'];
 $c = new Index();
 $data = $c->getUserData($uid);
-$dataresult = $data['result'];
-if ($dataresult) {
-    $realname = $data['data']['realname'] == "" ? "" : $data['data']['realname'];
-    $number = $data['data']['number'] == "" ? "" : $data['data']['number'];
-    $academy = $data['data']['academy'] == "" ? "" : $data['data']['academy'];
+if ($data) {
+    $realname = $data['realname'] == "" ? "" : $data['realname'];
+    $number = $data['number'] == "" ? "" : $data['number'];
+    $academy = $data['academy'] == "" ? "" : $data['academy'];
 } else {
     $realname = "";
     $number = "";
     $academy = "";
 }
+$academylist=$c->getAcademy();
+
 
 ?>
 
@@ -205,6 +206,9 @@ if ($dataresult) {
              style="align-self:center;width:400pt;height:200pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: center;align-content: center">
             <form name="update" action="/studySystem/updateUserAcademy" method="post">
                 <label>
+
+
+
                     <br>
                     <br>
                     姓名 : <input id="realname" name="realname" style="width:120pt;color: black;" value="<?php echo $realname; ?>">
@@ -216,13 +220,13 @@ if ($dataresult) {
                     学院 :
                     <select id="academy" name="academy" style="height: 25pt;font-size:12pt;align-content: center;color: black">
 
-                        <?php
+<!--                        --><?php
                         /*
                          * 获取学校id列表
                          */
-                        $academylist=array('计算机学院','自动化学院','外国语学院','机电学院');
+                        $academylist=$c->getAcademy();
                         for ($i = 0; $i < count($academylist); $i++) {
-                            $acad=$academylist[$i];
+                            $acad=$academylist[$i]['aname'];
                             if($acad==$academy){
                                 echo "<option value=" . $acad . " selected='selected' >" .$acad ."</option>";
                             }else{

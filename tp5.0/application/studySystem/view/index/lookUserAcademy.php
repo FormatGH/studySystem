@@ -127,11 +127,10 @@
     $uid=$_SESSION['uid'];
     $c=new Index();
     $data=$c->getUserData($uid);
-    $dataresult=$data['result'];
-    if($dataresult){
-        $realname=$data['data']['realname']==""?"(未填写)":$data['data']['realname'];
-        $number=$data['data']['number']==""?"(未填写)":$data['data']['number'];
-        $academy=$data['data']['academy']==""?"(未选择)":$data['data']['academy'];
+    if($data){
+        $realname=$data['realname']==""?"(未填写)":$data['realname'];
+        $number=$data['number']==""?"(未填写)":$data['number'];
+        $academy=$data['academy']==""?"(未选择)":$data['academy'];
     }else{
         $realname="(未填写)";
         $number="(未填写)";

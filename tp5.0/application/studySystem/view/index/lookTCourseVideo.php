@@ -1,4 +1,3 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:110:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookTCourseFile.php";i:1525249233;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -153,7 +152,6 @@
 
     }
 </script>
-
 </head>
 <body style="background: #555;color: #D3D3D3;">
 
@@ -169,23 +167,24 @@ $c=new Index();
 $userdata=$c->getUserData($uid);
 $tid=$c->getCourseByCid($cid)['tid'];
 
+
 ?>
 
 <div class="dark-matter" align="" style="">
     <h1>课程文件资料
-        <span>课程名：<?php echo $coursename; ?>-(<?php echo $academy; ?>)  章数:<?php echo $chapter; ?></span>
+        <span>课程名：{$coursename}-({$academy})  章数:{$chapter}</span>
     </h1>
     <center>
 <?php
 
-    $filetype='file';
+    $filetype='video';
 
     for($i=1;$i<=$chapter;$i++){
         $cname=$c->getCName($cid,$i)['cname'];
         ?>
 
         <div id="look" align="center" style="align-self:center;width:600pt;height:150pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: center;align-content: center">
-            第<?php echo $i; ?>章:<?php echo $cname; ?>
+            第{$i}章:{$cname}
             <br>
 <!--            --><?php
             $section=$c->getSection($cid,$i)['section'];
@@ -199,18 +198,20 @@ $tid=$c->getCourseByCid($cid)['tid'];
                     ?>
 
                     <div style="text-align: left;float: left;margin-left:5%;margin-top:2%;">
-                        第<?php echo $i; ?>-<?php echo $j; ?>节:<?php echo $sname; ?>
-                        <!--                    <a href="/static/studySystem/upload/<?php echo $tid; ?>/<?php echo $coursename; ?>(<?php echo $academy; ?>)/第<?php echo $i; ?>章-<?php echo $cname; ?>/<?php echo $i; ?>-<?php echo $j; ?><?php echo $sname; ?>/test.pdf">-->
-                        <br>
-                        <a href="/static/studySystem/upload/<?php echo $tid; ?>/<?php echo $coursename; ?>(<?php echo $academy; ?>)/第<?php echo $i; ?>章-<?php echo $cname; ?>/<?php echo $i; ?>-<?php echo $j; ?><?php echo $sname; ?>/<?php echo $file['filename']; ?>"
-                           target="_blank">
-                            &nbsp;&nbsp;
-                            <img style="width: 40pt;height: 40pt" src="/static/studySystem/img/file.png">
+                        第{$i}-{$j}节:{$sname}
+                        <!--                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/test.pdf">-->
+                        <br>&nbsp;&nbsp;
+<!--                            <video src="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/{$file['filename']}"></video>-->
+<!--                        <video src="/static/studySystem/upload/test.avi"></video>-->
+                        <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/{$file['filename']}" target="_blank">
+                            <img src="/static/studySystem/img/video.png" >
                             <br>
-                            &nbsp;&nbsp;
-                            <?php echo $sname; ?>
+                            &nbsp;课程视频
                         </a>
-                        <br>
+<!--                        <video width="320" height="240" controls>-->
+<!--                            <source src="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/{$file['filename']}" type="video/mp4">-->
+<!--                        </video>-->
+
 
 
                     </div>
@@ -221,23 +222,23 @@ $tid=$c->getCourseByCid($cid)['tid'];
 
                     ?>
                     <div style="text-align: left;float: left;margin-left:5%;margin-top:2%;">
-                        第<?php echo $i; ?>-<?php echo $j; ?>节:<?php echo $sname; ?>
-                        <!--                    <a href="/static/studySystem/upload/<?php echo $tid; ?>/<?php echo $coursename; ?>(<?php echo $academy; ?>)/第<?php echo $i; ?>章-<?php echo $cname; ?>/<?php echo $i; ?>-<?php echo $j; ?><?php echo $sname; ?>/test.pdf">-->
+                        第{$i}-{$j}节:{$sname}
+                        <!--                    <a href="/static/studySystem/upload/{$tid}/{$coursename}({$academy})/第{$i}章-{$cname}/{$i}-{$j}{$sname}/test.pdf">-->
                         <br>
                         <p style="color: red">还未上传资料</p>
 
 
                         <a href="javascript:;" class="file gradient">上传
-                            <form id="upload<?php echo $i; ?>_<?php echo $j; ?>" method="post" enctype="multipart/form-data"
+                            <form id="upload{$i}_{$j}" method="post" enctype="multipart/form-data"
                                   action="/studySystem/uploadFile2">
-                                <input name="returnaddr" hidden="hidden" value="/studySystem/lookTCourseFile?coursename=<?php echo $coursename; ?>&academy=<?php echo $academy; ?>"/>
-                                <input name="ftypes" hidden="hidden" value="pdf"/>
-                                <input name="ftype" hidden="hidden" value="file"/>
-                                <input hidden="hidden" name="coursename" value="<?php echo $cid; ?>">
+                                <input name="returnaddr" hidden="hidden" value="/studySystem/lookTCourseVideo?coursename={$coursename}&academy={$academy}"/>
+                                <input name="ftypes" hidden="hidden" value="mp4"/>
+                                <input name="ftype" hidden="hidden" value="video"/>
+                                <input hidden="hidden" name="coursename" value="{$cid}">
 
-                                <input hidden="hidden" name="chapter" value="<?php echo $i; ?>">
-                                <input hidden="hidden" name="section" value="<?php echo $j; ?>">
-                                <input type="file" name="file" style="color: transparent;" onchange="upload('<?php echo $i; ?>_<?php echo $j; ?>')">
+                                <input hidden="hidden" name="chapter" value="{$i}">
+                                <input hidden="hidden" name="section" value="{$j}">
+                                <input type="file" name="file" style="color: transparent;" onchange="upload('{$i}_{$j}')">
                             </form>
                         </a>
                     </div>

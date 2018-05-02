@@ -15,7 +15,7 @@
                     $.ajax({
                         async:false,
                         type:"POST",
-                        url:"http://localhost/studySystem/uploadFile1",
+                        url:"http://localhost/studySystem/uploadFileForm",
                         data: {"cid":cname,"select":'chapter'},
                         dataType:"json",
                         success:function(data){
@@ -32,7 +32,7 @@
                 $.ajax({
                     async:false,
                     type:"POST",
-                    url:"http://localhost/studySystem/uploadFile1",
+                    url:"http://localhost/studySystem/uploadFileForm",
                     data: {"cid":cid,"chapter":chapter,"select":'section'},
                     dataType:"json",
                     success:function(data){
@@ -124,7 +124,6 @@
             $ftype=input('ftype');
             $uid=$_SESSION['uid'];
             $index=new Index();
-
             $courses=$index->getCourses($uid)['data'];
             if($ftype=='file'){
                 $ftypes='txt/doc/pdf';
@@ -137,6 +136,7 @@
             ?>
 
             <FORM method="post" enctype="multipart/form-data" class="form" action="/studySystem/uploadFile2">
+                <input name="returnaddr" hidden="hidden" value="/studySystem/uploadFileForm?ftype={$ftype}"/>
                 <input name="ftypes" hidden="hidden" value="{$ftypes}"/>
                 <input name="ftype" hidden="hidden" value="{$ftype}"/>
 

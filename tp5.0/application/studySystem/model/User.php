@@ -128,7 +128,7 @@ protected $connection = [
         }
     }
 
-    public function readAll(){
+    public function getUser(){
         $result=Db::query('select * from user');
         return $result;
     }

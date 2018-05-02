@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:106:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookTCourse.php";i:1524815175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:106:"D:\PHPstudy\PHPTutorial\WWW\studySystem\tp5.0\public/../application/studysystem\view\index\lookTCourse.php";i:1525227338;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -151,13 +151,14 @@
         for($i=0;$i<count($courses);$i++){
             $coursename=$courses[$i]['coursename'];
             $academy=$courses[$i]['academy'];
+            $cid=$courses[$i]['cid'];
 
             //echo $courses[$i]['coursename'];
  ?>
 
         <div id="edit" align="center" style="margin-left:5%;margin-top:2%;float: left; align-self:center;width:200pt;height:200pt;border: 2pt solid ;font-size:14pt;font-family: 楷体; font-weight: 600;text-align: center;align-content: center">
-            <a href="/static/studySystem/upload/xxx.pdf" >资料</a>
-            <form name="add" action="/studySystem/addCourse" method="post">
+<!--            <a href="/static/studySystem/upload/xxx.pdf" >资料</a>-->
+
                 <label style="color: yellow;">
                     <center>
                         <img src="/static/studySystem/img/logBanner.png" style="margin-top:5%;height: 90pt;width: 90pt;">
@@ -175,10 +176,10 @@
 
 
 
-                        <a style="font-size: small;font-family: 'Microsoft Yahei'" href="/studySystem/LookTCourseFile?coursename=<?php echo $coursename; ?>&academy=<?php echo $academy; ?>"><文件资料</a>
-                    <a href="/studySystem/LookCourseMsg?coursename=<?php echo $coursename; ?>&academy=<?php echo $academy; ?>" style="color:red;font-size: small;font-family: 'Microsoft Yahei'">课程大纲</a>
+                        <a style="font-size: small;font-family: 'Microsoft Yahei'" href="/studySystem/LookTCourseFile?cid=<?php echo $cid; ?>" target="_blank"><文件资料</a>
+                    <a href="/studySystem/LookCourseMsg?cid=<?php echo $cid; ?>" style="color:red;font-size: small;font-family: 'Microsoft Yahei'">课程大纲</a>
 
-                        <a style="font-size: small;font-family: 'Microsoft Yahei'" href="">视频资料></a>
+                        <a style="font-size: small;font-family: 'Microsoft Yahei'" href="/studySystem/LookTCourseVideo?cid=<?php echo $cid; ?>">视频资料></a>
 
 
 
@@ -186,7 +187,7 @@
                 </label>
 
 
-            </form>
+
         </div>
 
 <?php
